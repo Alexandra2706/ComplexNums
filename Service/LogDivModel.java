@@ -14,7 +14,8 @@ public class LogDivModel extends Operation {
 
     @Override
     public ModelComplex getResult(ModelComplex numA, ModelComplex numB) {
-        logable.log("Частное комплексных чисел " + numA + " + " + numB);
+        logable.log("Частное комплексных чисел " + numA + " / " + numB);
+        logable.writeToFile("Частное комплексных чисел " + numA + " / " + numB);
         return div.getResult(numA, numB);
     }
 

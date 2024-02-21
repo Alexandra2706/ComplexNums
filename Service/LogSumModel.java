@@ -15,6 +15,7 @@ public class LogSumModel extends Operation {
     @Override
     public ModelComplex getResult(ModelComplex numA, ModelComplex numB) {
         logable.log("Сумма комплексных чисел " + numA + " + " + numB);
+        logable.writeToFile("Сумма комплексных чисел " + numA + " + " + numB);
         return sum.getResult(numA, numB);
     }
 

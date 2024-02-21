@@ -14,7 +14,8 @@ public class LogMultModel extends Operation {
 
     @Override
     public ModelComplex getResult(ModelComplex numA, ModelComplex numB) {
-        logable.log("Произведение комплексных чисел " + numA + " + " + numB);
+        logable.log("Произведение комплексных чисел " + numA + " * " + numB);
+        logable.writeToFile("Произведение комплексных чисел " + numA + " * " + numB);
         return mult.getResult(numA, numB);
     }
 
